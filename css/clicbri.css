@@ -1,0 +1,86 @@
+*{
+  /*
+  Reseteamos los estilos que pueda aplicar el navegador a la web
+  */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #FFF;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #212121;
+  /*
+  background: -webkit-linear-gradient(#555, #212121);
+  background: -o-linear-gradient(#555, #212121);
+  background: -moz-linear-gradient(#555, #212121);
+  background: linear-gradient(#555, #212121);
+  */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body{
+  /*
+  Necesario para jugar en procentajes con las alturas de los elementos
+  */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Pacifico;
+  text-align: center;
+}
+
+h1{
+  font-size: 5em;
+}
+
+body>div#linear-brand{
+  /*
+  Esta sección se encarga de hacer un degradado lineal multicolor
+  en la parte superior de la página.
+  */
+  position: static;
+  height: 1px;
+  background-color: #6967F6;
+  background: -webkit-linear-gradient(left,#6967F6,#369AF7,#02CDFA,#2BFFA4,#FFCB46,#FF9849,#FF6569,#FF3195); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left,#6967F6,#369AF7,#02CDFA,#2BFFA4,#FFCB46,#FF9849,#FF6569,#FF3195); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left,#6967F6,#369AF7,#02CDFA,#2BFFA4,#FFCB46,#FF9849,#FF6569,#FF3195); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(left,#6967F6,#369AF7,#02CDFA,#2BFFA4,#FFCB46,#FF9849,#FF6569,#FF3195); /* Standard syntax */
+  display: block;
+}
+
+.section{
+  /*
+  Se trata del contenedor de cada seccion de la pagina.
+  */
+  position: static;
+  width: 95%;
+  height: 100%;
+  margin: inherit;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+div.logo{
+  /*
+  Diseñamos el tamanio y ubicacion del logo
+  */
+  display: block;
+  position: relative;
+  margin: auto;
+  height: 100%;
+  background-image: url(../images/clicbri.png);
+  background-image: url(../svg/clicbri.svg);
+  opacity: 1;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

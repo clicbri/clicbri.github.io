@@ -1,0 +1,37 @@
+div#wrapper-dock{
+  position: fixed;
+  right: 0px;
+  display: none;
+  width: 5%;
+  height: 100%;
+  border: 1px solid red;
+  background-color: green;
+}
+
+div#wrapper-dock div.dock{
+
+  display: flex;
+  display: -webkit-flex;
+
+  /*
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  */
+
+  align-items: center;
+
+  position: relative;
+  top: 25%;
+  bottom: 25%;
+  height: 50%;
+  background-color: pink;
+}
+
+div#wrapper-dock div.dock div.ico{
+  display: block;
+  /*display: -webkit-flex;*/
+
+  flex-direction: column;
+  -webkit-flex-direction: column;
+
+}
